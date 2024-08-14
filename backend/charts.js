@@ -48,9 +48,7 @@ router.get("/endYear", async (req, res) => {
     // start year json
     data.map((d) => {
       let year = d.end_year;
-
       if (year == null) year = "N/A";
-
       if (!endYearData[year]) {
         if (year > 2050);
         else endYearData[year] = 1;
